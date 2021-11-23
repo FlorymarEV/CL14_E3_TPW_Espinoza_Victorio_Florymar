@@ -1,0 +1,25 @@
+from random import randint
+mayor=6
+menor=1
+for i in range (0,1):
+    dado1=randint(1,6)
+    dado2=randint(1,6)
+    dado3=randint(1,6)
+    dado4=randint(1,6)
+    dado5=randint(1,6)
+    if dado1>dado2:
+        mayor=dado1
+        menor=dado2
+    if dado2>dado3:
+        mayor=dado2
+        menor=dado3
+    if dado3>dado4:
+        mayor=dado3
+        menor=dado4
+    if dado4 > dado5:
+        mayor=dado4
+        menor=dado5
+    suma=dado1+dado2+dado3+dado4+dado5
+print("La suma de todos los resultados de los dados es: ",suma)
+print("El mayor valor de todos los dados es: ",mayor)
+print("El menor valor de todos los dados es: ",menor)
